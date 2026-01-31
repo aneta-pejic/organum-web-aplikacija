@@ -1,0 +1,41 @@
+body {
+    background-color: #CAC4F5;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    padding: 10px;
+    font-family: "Ribeye", serif;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    background-color: #7F62B5;
+    position: sticky;
+    top: 0%;
+    padding-right: 50%;
+}
+
+p,
+address {
+    color: #252525;
+    font-size: 30px;
+    text-align: justify;
+    margin-left: 30px;
+}
+
+address {
+    margin-bottom: 40px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.image-container img {
+    width: 700px;
+    height: 600px;
+}

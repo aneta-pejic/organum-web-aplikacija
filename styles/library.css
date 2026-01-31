@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 1000px;
+    background-image: url('../images/background_library.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-size: 52px;
+    color: #3D291E;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-family: "Ribeye", serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    row-gap: 60px;
+}
+
+.card {
+    width: 260px;
+    height: 360px;
+    perspective: 1200px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 8px 16px #252525;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover .card-side {
+    box-shadow: 0 12px 24px #252525;
+}
+
+.front {
+    background: white;
+}
+
+.back {
+    background: #D9C1B4;
+    transform: rotateY(180deg);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-side h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: "Ribeye", serif;
+}
+
+.card-side p {
+    font-size: 18px;
+    color: #252525;
+    line-height: 1.5;
+    margin-top: 10px;
+}

@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 1000px;
+    flex-direction: row;
+    margin: 0;
+    position: relative;
+    background-color: #CAC4F5;
+}
+
+.col-1 {
+    border-radius: 15px;
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    height: 95vh;
+    position: fixed;
+    padding: 20px;
+    top: 10px;
+    left: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    flex: 0 0 auto;
+}
+
+.col-1 ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.col-1 ul .go_back {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #7F62B5;
+    color: white;
+    border-radius: 10px;
+}
+
+.col-1 ul .go_back a {
+    font-size: 15px;
+}
+
+.col-1 ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.col-1 ul li:hover {
+    background-color: #555;
+}
+
+.col-1 ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 170px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 1000px;
+    color: #252525;
+    padding-top: 4%;
+    padding-left: 10%;
+    position: relative;
+}
+
+.content article {
+    flex: 3;
+    min-height: 600px;
+}
+
+.content aside {
+    flex: 1;
+    padding-right: 0px;
+}
+
+.content h1 {
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 600;
+    font-family: "Ribeye", serif;
+}
+
+.content button img {
+    width: 25px;
+    margin-right: 8px;
+}
+
+.content button {
+    display: flex;
+    align-items: center;
+    background-color: #7F62B5;
+    color: #fff;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+    border-radius: 40px;
+    padding: 15px 25px;
+    margin: 30px 0 20px;
+    cursor: pointer;
+}
+
+.note {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    min-height: 150px;
+    background: white;
+    color: #252525;
+    padding: 20px;
+    margin: 20px 0;
+    border: solid 3px #7F62B5;
+    border-radius: 5px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.note-text {
+    flex-grow: 1;
+    word-wrap: break-word;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.note img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+header,
+footer {
+    background: #CAC4F5;
+    height: 200px;
+}
+
+header,
+footer,
+article,
+nav,
+aside {
+    padding: 1em;
+}

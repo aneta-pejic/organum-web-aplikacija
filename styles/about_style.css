@@ -1,0 +1,29 @@
+body {
+    background-color: #CAC4F5;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    padding: 10px;
+    font-family: "Ribeye", serif;
+    font-size: 60px;
+    text-align: left;
+    color: white;
+    background-color: #7F62B5;
+    position: sticky;
+    top: 0%;
+}
+
+p {
+    color: #252525;
+    font-size: 30px;
+    text-align: justify;
+    padding-right: 80px;
+}
+
+ol,
+ul {
+    font-size: 30px;
+}
